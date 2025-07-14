@@ -33,4 +33,4 @@ jobs:
         run: aws s3 cp ./dist s3://oz-bucket-test-s1/ --recursive
 
       - name: CloudFront 캐시 무효화
-        run: aws cloudfront create-invalidation -- distritution-id EC7YSAJAC5LTM --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id EC7YSAJAC5LTM --paths "/*" #오타수정
