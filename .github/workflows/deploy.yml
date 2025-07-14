@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Github Repostiroty 파일 불러오기.
+      - name: Github Repository 파일 불러오기.
         uses: actions/checkout@v4
         #github marketplace에서 라이브러리 확인.
+
+      - name: Repository 파일 출력하기.
+        run: ls
